@@ -2,10 +2,13 @@
 
 ## Question
 
-This project determines the most important drivers of user engagement with a business on Yelp. Key questions:
+What are the most important drivers of user engagement with a business on Yelp? Potential features to examine:
 
-* What aspects of a Yelp business profile correlate with better or worse user engagement?
-* To improve user engagement, should a business add more pictures, try to encourage more influential reviewers to rate them, offer specials or coupons, allow take-out orders, have better parking, or something else in order to best drive user engagement?
+* More pictures
+* More influential reviewers rating them
+* Offering specials or coupons
+* Allowing take-out orders
+* Having better parking
 
 ## Dataset
 
@@ -17,4 +20,8 @@ This project uses the [Yelp Open Dataset](https://www.yelp.com/dataset), which i
 * `checkin.json`: Checkins on a business.
 * `tip.json`: Tips written by a user on a business. Tips are shorter than reviews and tend to convey quick suggestions.
 
-I've filtered the dataset to include only businesses in Arizona or Nevada.
+I've filtered the dataset to include only businesses in Cleveland, Ohio, and included the filtered data in the `data` directory of this repo. To create your own subset of the Yelp dataset, you can use `create_sample_data.py` and alter the line below based on your own desired filter:
+
+```python
+business_sample = business_df[business_df['city'].str.contains('leveland')]
+```
