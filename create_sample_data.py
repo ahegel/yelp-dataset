@@ -44,6 +44,22 @@ for row in review_df.iterrows():
     with open('review_sample.json', 'a') as f:
         line = row[1].to_json(f)
         f.write('\n')
+# now that sample file is made, get list of user id's from it
+# convert into a dict with values as keys for fast searching
+print 'Getting user_ids'
+user_ids = pd.Series(review_df['user_id'].index.values, index=review_df['user_id']).to_dict()
+
+# USER.JSON
+user_data = []
+with open(os.path.dirname(__file__) + user_file) as f:
+    for line in f:
+        newline = ast.literal_eval(line)  # read the line (str) as a dict
+        if newline['user_id'] in user_ids:
+            user_data.append(json.loads(line))
+user_df = pd.DataFrame.from_dict(user_data)
+print 'Creating user_sample.json'
+with open('user_sample.json', 'w') as f:
+    user_df.to_json(f, orient='records', lines=True)
 
 # TIP.JSON
 tip_data = []
