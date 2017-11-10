@@ -1,14 +1,14 @@
 # Yelp Dataset
 
-## Question
+## Project
 
-What are the most important drivers of user engagement with a business on Yelp? Potential features to examine:
+Which business attributes have the greatest impact on a Yelp business' star rating? Using a variety of regression models, I was able to predict (within about 0.75 stars accuracy) a business' star rating given only its business attributes. Some of the attributes that proved most predictive include:
 
-* More pictures
-* More influential reviewers rating them
-* Offering specials or coupons
-* Allowing take-out orders
-* Having better parking
+* Karaoke music
+* Catering
+* Bike parking
+* Street parking
+* Intimate ambiance
 
 ## Dataset
 
