@@ -1,6 +1,6 @@
-# Yelp Dataset
+# Predicting Star Ratings on Yelp
 
-## Project
+## Summary
 
 Which business attributes have the greatest impact on a Yelp business' star rating? Using a variety of regression models, I was able to predict (within about 0.75 stars accuracy) a business' star rating given only its business attributes. Some of the attributes that proved most predictive include:
 
