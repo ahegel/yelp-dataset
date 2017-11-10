@@ -10,6 +10,8 @@ Which business attributes have the greatest impact on a Yelp business' star rati
 * Street parking
 * Intimate ambiance
 
+You can walk through the analysis [here](https://github.com/ahegel/yelp-dataset/blob/master/Predicting%20Star%20Ratings.ipynb).
+
 ## Dataset
 
 This project uses the [Yelp Open Dataset](https://www.yelp.com/dataset), which includes 5 files:
